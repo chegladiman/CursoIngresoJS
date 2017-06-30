@@ -4,6 +4,8 @@
 */
 function Mostar()
 {
-	
+	var nombre
+	nombre= document.getElementById("suNombre").value
+	alert(nombre)
 }
 
