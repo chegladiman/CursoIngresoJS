@@ -18,5 +18,4 @@ else
 {
 alert("niño")
 
-
 }//FIN DE LA FUNCIÓN
