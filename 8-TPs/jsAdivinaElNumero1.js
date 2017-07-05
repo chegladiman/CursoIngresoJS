@@ -31,7 +31,7 @@ function verificar()
   if(numero==numeroSecreto)
   {   
       alert("Usted es el ganador con "+contadorIntentos + "intentos");
-      contadorIntentos=0;
+      contadorIntentos=0; 
   }
   else
 
