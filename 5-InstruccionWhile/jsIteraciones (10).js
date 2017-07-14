@@ -47,17 +47,28 @@ function Mostrar()
 	}
 
 	}
+	if(contpos==0)
+	{
+		promediopositivo="No ingreso ningun positivo";
+	}
+	if(isNaN(promedioneg))
+	{
+		promedioneg="Es correcto";
+	}
+		document.write("la cantidad de positivos son " + contpos + "<Br>");
 
-		{document.write(contpos);
-		}
 		promediopositivo=acumpos/contpos;
-		document.write(promediopositivo);
+		document.write("El promedio de los positivos es " + promediopositivo + "<Br>");
 
 		promedioneg=acumneg/contneg;
-		document.write(promedioneg);
+		document.write("El promedio negativo es " + promedioneg + "<Br>");
 
 		diferencias=contpos-contneg
-		document.write(diferencias);
+		if(diferencias<0)
+		{
+			diferencias*=-1;
+		}		
+		document.write("El resultado de la diferencia entre positivos y negativos es "+ diferencias + "<Br>");
 		
 
 
