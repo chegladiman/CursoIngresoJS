@@ -5,25 +5,107 @@ El jugador seleccionará una imagen correspondiente
 a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
+var contadorgano=0;
+var contadorempato=0;
+var contadorperdio=0;
+var resultado;
 
+    
 function comenzar()
 {
-	
+eleccionMaquina=Math.floor(Math.random()*(4-1)+1);
+    console.log(eleccionMaquina);
 
 
 }//FIN DE LA FUNCIÓN
 function piedra()
-{
-	
+{   
+    comenzar(eleccionMaquina);
+    switch(eleccionMaquina)
+        {
+            case 1: 
+                    
+                    contadorempato++
+                    resultado="empató";
+                    MostrarResultado()
+                    break;
+
+        
+            case 2:
+                   
+                    contadorperdio++
+                    resultado="perdió";
+                    MostrarResultado()
+                    break;
+            case 3:
+                   
+                    contadorgano++
+                    resultado="Ganó";
+                    MostrarResultado()
+                    break;
+        }
+                    
 
 }//FIN DE LA FUNCIÓN
 function papel()
 {
+     comenzar(eleccionMaquina);
+    switch(eleccionMaquina)
+        {
+            case 1: 
+                    
+                    contadorempato++
+                    resultado="empató";
+                    MostrarResultado()
+                    break;
 
+        
+            case 2:
+                   
+                    contadorperdio++
+                    resultado="perdió";
+                    MostrarResultado()
+                    break;
+            case 3:
+                   
+                    contadorgano++
+                    resultado="Ganó";
+                    MostrarResultado()
+                    break;
+        }
 
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
+     comenzar(eleccionMaquina);
+    switch(eleccionMaquina)
+        {
+            case 1: 
+                    
+                    contadorempato++
+                    resultado="empató";
+                    MostrarResultado()
+                    break;
+
+        
+            case 2:
+                   
+                    contadorperdio++
+                    resultado="perdió";
+                    MostrarResultado()
+                    break;
+            case 3:
+                   
+                    contadorgano++
+                    resultado="Ganó";
+                    MostrarResultado()
+                    break;
+        }
 
 }//FIN DE LA FUNCIÓN
+function MostrarResultado()
+ {
+     alert(resultado);
+ }
+
+ 

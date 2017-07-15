@@ -15,22 +15,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
    var marca, cantidad, precio, total, totalBrutos, ingresosBrutos;
 precio = 35;
 
-function ImprimirPrecio()
-{
-    
-    if(total >= 120)
-    {
-        ingresosBrutos = total * 0.10;
-        totalBrutos = total + ingresosBrutos;
-        document.getElementById("precioDescuento").value = "$" + totalBrutos;
-        alert("Usted pago $" + ingresosBrutos + " de IIBB");
-    }
-         
-    else
-    {
-        document.getElementById("precioDescuento").value = "$" + total;
-    }
-}
+
 
 function CalcularPrecio () 
 {
@@ -129,5 +114,20 @@ function CalcularPrecio ()
         }
      }
 }
-            
+      function ImprimirPrecio()
+{
+    
+    if(total >= 120)
+    {
+        ingresosBrutos = total * 0.10;
+        totalBrutos = total + ingresosBrutos;
+        document.getElementById("precioDescuento").value = "$" + totalBrutos;
+        alert("Usted pago $" + ingresosBrutos + " de IIBB");
+    }
+         
+    else
+    {
+        document.getElementById("precioDescuento").value = "$" + total;
+    }
+}      
 
