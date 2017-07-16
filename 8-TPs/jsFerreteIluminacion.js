@@ -25,9 +25,8 @@ function CalcularPrecio ()
      if (cantidad >= 6)
      {
          total = precio * cantidad * 0.5;
-         ImprimirPrecio()
+         ImprimirPrecio();
      }
-
      else
      {
          switch(marca)
@@ -36,25 +35,18 @@ function CalcularPrecio ()
                 if(cantidad == 5)
                 {
                     total = precio * cantidad * 0.6;
-                    ImprimirPrecio()
                 }
-                
                 else if(cantidad == 4)
                 {
                     total = precio * cantidad * 0.75;
-                    ImprimirPrecio()
-                }
-                
+                }            
                 else if(cantidad == 3)
                 {
                     total = precio * cantidad * 0.9;
-                    ImprimirPrecio()
                 }
-
                 else
                 {
                     total = precio * cantidad;
-                    ImprimirPrecio()
                 }
                 break;
 
@@ -62,25 +54,18 @@ function CalcularPrecio ()
                 if(cantidad == 5)
                 {
                     total = precio * cantidad * 0.7;
-                    ImprimirPrecio()
                 }
-                
                 else if(cantidad == 4)
                 {
                     total = precio * cantidad * 0.75;
-                    ImprimirPrecio()
                 }
-                
                 else if(cantidad == 3)
                 {
                     total = precio * cantidad * 0.85;
-                    ImprimirPrecio()
                 }
-                
                 else
                 {
                     total = precio * cantidad;
-                    ImprimirPrecio()
                 }
                 break;
             
@@ -90,31 +75,26 @@ function CalcularPrecio ()
                 if(cantidad == 5)
                 {
                     total = precio * cantidad * 0.70;
-                    ImprimirPrecio()
                 }
-                
                 else if(cantidad == 4)
                 {
                     total = precio * cantidad * 0.80;
-                    ImprimirPrecio()
                 }
-                
                 else if (cantidad == 3)
                 {
                     total = precio * cantidad * 0.95;
-                    ImprimirPrecio()
                 }
-                
                 else
                 {
                     total = precio * cantidad;
-                    ImprimirPrecio()
                 }
                 break;
         }
+        ImprimirPrecio();
      }
 }
-      function ImprimirPrecio()
+
+function ImprimirPrecio()
 {
     
     if(total >= 120)

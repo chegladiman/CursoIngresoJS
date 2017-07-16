@@ -1,23 +1,20 @@
 function Mostrar()
 {
 
-	var contador=0;
+	var flagNegativos = false;
 	var positivo=0;
 	var negativo=1;
 	var num;
-	var respuesta='si';
-	while(respuesta=="si")
+	var respuesta=true;
+	while(respuesta)
 	{
 		num=prompt("ingrese un numero");
-		num=parseInt(num);
 		while(isNaN(num))
 		{
 			num=prompt("ingrese un número");
-			num=parseInt(num);
-
 		}
-		contador++;
-		respuesta=prompt("desea continuar?");
+		num=parseInt(num);
+		
 		if(num>=0)
 		{
 			positivo+=num;
@@ -26,10 +23,15 @@ function Mostrar()
 		else
 		{
 			negativo*=num;
+			flagNegativos = true;
 		}
+		respuesta=confirm("Desea continuar?");
 	}
-
 document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+
+if(flagNegativos)
+	document.getElementById('producto').value=negativo;
+else
+	document.getElementById('producto').value= 0;
 
 }//FIN DE LA FUNCIÓN

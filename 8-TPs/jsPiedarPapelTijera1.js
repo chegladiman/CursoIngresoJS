@@ -5,7 +5,7 @@ El jugador seleccionará una imagen correspondiente
 a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
-var contadorgano=0;
+var contadorgano=3;
 var contadorempato=0;
 var contadorperdio=0;
 var resultado;
@@ -23,29 +23,24 @@ function piedra()
     comenzar(eleccionMaquina);
     switch(eleccionMaquina)
         {
-            case 1: 
-                    
-                    contadorempato++
-                    resultado="empató";
-                    MostrarResultado()
-                    break;
+                case 1:
+                contadorempato++;
+                resultado="empató";
+                MostrarResultado();
+                break;
 
-        
-            case 2:
-                   
-                    contadorperdio++
-                    resultado="perdió";
-                    MostrarResultado()
-                    break;
-            case 3:
-                   
-                    contadorgano++
-                    resultado="Ganó";
-                    MostrarResultado()
-                    break;
+                case 2:
+                contadorperdio++;
+                resultado="perdió";
+                MostrarResultado();
+                break;
+                
+                case 3:
+                contadorgano++;
+                resultado="Ganó";
+                MostrarResultado()
+                break;
         }
-                    
-
 }//FIN DE LA FUNCIÓN
 function papel()
 {
@@ -54,7 +49,7 @@ function papel()
         {
             case 1: 
                     
-                    contadorempato++
+                    contadorempato++;
                     resultado="empató";
                     MostrarResultado()
                     break;
@@ -62,13 +57,13 @@ function papel()
         
             case 2:
                    
-                    contadorperdio++
+                    contadorperdio++;
                     resultado="perdió";
                     MostrarResultado()
                     break;
             case 3:
                    
-                    contadorgano++
+                    contadorgano++;
                     resultado="Ganó";
                     MostrarResultado()
                     break;
@@ -82,7 +77,7 @@ function tijera()
         {
             case 1: 
                     
-                    contadorempato++
+                    contadorempato++;
                     resultado="empató";
                     MostrarResultado()
                     break;
@@ -90,13 +85,13 @@ function tijera()
         
             case 2:
                    
-                    contadorperdio++
+                    contadorperdio++;
                     resultado="perdió";
                     MostrarResultado()
                     break;
             case 3:
                    
-                    contadorgano++
+                    contadorgano++;
                     resultado="Ganó";
                     MostrarResultado()
                     break;
