@@ -1,6 +1,10 @@
 function Mostrar()
 {
+    for(;i!=9;contador++)
 
+    {
+        if
+    }
 
 
 
