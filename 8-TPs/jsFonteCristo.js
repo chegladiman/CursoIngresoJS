@@ -13,12 +13,24 @@ function ComenzarIngreso ()
 }
 function NumerosPares ()
 {
-var contador=document.getElementById("numero");
+var contador=document.getElementById("numero").value;
 
-    for(contador=0;contador<=i;contador++)
-    if(contador%2==0)
+    for(i=1;i<=contador;i++)
+    if(i%2==0)
     {
-        console.log("Numero Par: " +contador);
+        console.log("Numero Par: " +i);
+    }
+
+}
+
+function NumerosImpares ()
+{
+var contador=document.getElementById("numero").value;
+
+    for(i=1;i<=contador;i++)
+    if((i%2)!==0)
+    {
+        console.log("Numero imPar: " +i);
     }
 
 }
