@@ -1,9 +1,14 @@
 function Mostrar()
 {
-    for(;i!=9;contador++)
+    var contador;
+    var num;
 
+    for(contador=0;;contador++)
     {
-        if
+        num=parseInt(prompt("Ingrese un número"))
+        if(num==9)
+            break
+            console.log(num);
     }
 
 
