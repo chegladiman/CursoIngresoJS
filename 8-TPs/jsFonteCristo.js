@@ -11,3 +11,14 @@ function ComenzarIngreso ()
 {
  	
 }
+function NumerosPares ()
+{
+var contador=document.getElementById("numero");
+
+    for(contador=0;contador<=i;contador++)
+    if(contador%2==0)
+    {
+        console.log("Numero Par: " +contador);
+    }
+
+}
