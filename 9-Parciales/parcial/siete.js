@@ -37,29 +37,33 @@ function Mostrar()
     while(cant<4)
     {
         cant++;
-        nota=prompt(nota);
-        while(nota<0 || nota>10)
+        nota=prompt("ingresar nota");
+        nota=parseInt(nota);
+        while(isNaN(nota) || nota<0 || nota>10)
         {
-            nota=prompt(nota);
-
-        nota=parseint(nota);
-        sexo=prompt(sexo);
-        while(sexo!="f"&&sexo!="m")
-        {
-            sexo=prompt(sexo);
+            nota=prompt("ingresar nota");
+            nota=parseInt(nota);
         }
-            acum=nota;
+
+        sexo=prompt("ingresar sexo");
+        while(sexo!="f" && sexo!="m")
+        {
+            sexo=prompt("ingresar sexo");
+        }
+        
+        acum += nota;
+
         if(nota<min)
-        {   min=nota
-            
+        {   
+            min=nota;
         }
-        if(nota>6 && sexo=="m")
-         {  contmas++;
-        }
-            document.write(acum/cant);
-            
-            
 
+        if(nota>6 && sexo=="m")
+        {  
+            contmas++;
         }
     }
+    alert("Promedio total: " + acum/cant);
+    alert("Menor nota: " + min);
+    alert("Alumnos masculinos con nota mayor o igual a 6:" + contmas);
 }

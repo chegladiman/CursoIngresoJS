@@ -1,3 +1,5 @@
+var num;    
+
 function Mostrar()
 {
 
