@@ -34,19 +34,19 @@ function Mostrar()
     var acum=0;
     var contmas=0;
 
-    while(cant<100)
+    while(cant<4)
     {
         cant++;
-        nota=prompt();
+        nota=prompt(nota);
         while(nota<0 || nota>10)
         {
-            nota=prompt();
+            nota=prompt(nota);
 
         nota=parseint(nota);
-        sexo=prompt();
+        sexo=prompt(sexo);
         while(sexo!="f"&&sexo!="m")
         {
-            sexo=prompt();
+            sexo=prompt(sexo);
         }
             acum=nota;
         if(nota<min)
@@ -54,11 +54,12 @@ function Mostrar()
             
         }
         if(nota>6 && sexo=="m")
-            contmas++;
+         {  contmas++;
         }
             document.write(acum/cant);
             
             
 
         }
-
+    }
+}
