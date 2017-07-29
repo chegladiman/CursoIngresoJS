@@ -2,20 +2,39 @@ var importeventas;
 var mayorimporte;
 var menorimporte;
 var dias;
-var contador;
-var acumulador;
+var contador=0;
+var acumulador=0;
+var bandera=true;
 
 function Mostrar()
 {
-importeventas=prompt("Ingrese un nùmero");
 
-while(dias<24)
+while(contador<5)
 {
-        importeventas=prompt("ingrese un numero");
-		importeventas=parseInt(importeventas);
+		importeventas=prompt("Ingrese un nùmero");
+        importeventas=parseInt(importeventas);
 		contador++;
-		acumulador=contador+importeventas;
+		acumulador+=importeventas;
+  if(bandera)
+    {
+        mayorimporte=importeventas;
+        menorimporte=importeventas;
+        bandera=false;
+    }
+
+    else
+    
+        if(importeventas>mayorimporte){
+            mayorimporte=importeventas;
+        }
+
+   
+    else
         
-            alert(Math.max(importeventas + Math.min(importeventas)));
+                if(importeventas<menorimporte){
+                menorimporte=importeventas;
+    }
+
 }
+        alert("El mayor importe es " + mayorimporte + "el menor importe es " + menorimporte);
 }
